@@ -6,7 +6,7 @@ const CollectionItem=({id,imageUrl,name,price})=>(
         style={{backgroundImage:`url(${imageUrl})`}}/>
         <div className='collection-footer'>
          <span className='name'>{name}</span>
-         <span className='price'>{price}</span>
+         <span className='price'>{price}0kr</span>
         </div>
     </div>
 );
