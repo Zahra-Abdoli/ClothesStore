@@ -30,7 +30,7 @@ export class SignUp extends React.Component {
       );
       
       await CreateUserProfileDocument(user, {displayName});
-      debugger
+      
       this.setState({
         displayName: "",
         email: "",
@@ -43,7 +43,6 @@ export class SignUp extends React.Component {
   };
   handleChange = event => {
     const { name, value } = event.target;
-    debugger
     this.setState({ [name]: value });
   };
   render() {
