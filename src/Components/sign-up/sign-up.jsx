@@ -28,9 +28,9 @@ export class SignUp extends React.Component {
         email,
         password
       );
-      
-      await CreateUserProfileDocument(user, {displayName});
-      
+
+      await CreateUserProfileDocument(user, { displayName });
+
       this.setState({
         displayName: "",
         email: "",
@@ -41,7 +41,7 @@ export class SignUp extends React.Component {
       console.error(error);
     }
   };
-  handleChange = event => {
+  handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
   };
